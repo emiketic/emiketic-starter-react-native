@@ -12,7 +12,7 @@
     "format-check": "prettier --check \"**/*.{js,jsx,json}\"",
     "format-fix": "prettier --write \"**/*.{js,jsx,json}\"",
     "postinstall": "husky install",
-    "release": "standard-version"
+    "release": "standard-version && rettier --write ./CHANGELOG.md "
   },
   "dependencies": {
     "react": "17.0.1",
