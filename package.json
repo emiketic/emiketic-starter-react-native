@@ -13,9 +13,9 @@
     "format-fix": "prettier --write \"**/*.{js,jsx,json}\"",
     "postinstall": "husky install",
     "release": "standard-version && prettier --write ./CHANGELOG.md",
-    "release-minor": "standard-version --release-as minor && prettier --write ./CHANGELOG.md",
-    "release-major": "standard-version --release-as major && prettier --write ./CHANGELOG.md",
-    "release-dry": "standard-version --dry-run  && prettier --write ./CHANGELOG.md"
+    "release-minor": "standard-version --release-as minor",
+    "release-major": "standard-version --release-as major",
+    "release-dry": "standard-version --dry-run"
   },
   "dependencies": {
     "react": "17.0.1",
