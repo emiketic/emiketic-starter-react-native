@@ -28,6 +28,11 @@ If you're forking or using this template for your own project or team, we recomm
 
     `git commit -m "feat: Closes ISS-1. Ability to login with Apple BREAKING CHANGE: Updated React Native version"`
 
+  - Commits not impacting versioning:
+    - Regular / casual example: `git commit -m "chore: ISS-4 Installed dependencies"`
+    - Refactoring example: `git commit -m "refactoring: Refactored component"`
+    - Other commit types: _build:, chore:, ci:, docs:, style:, refactor:, perf:, test_
+
 - The standard is linted and Husky will prevent commits from going through if it's not compliant
 - Project managers/owners can release satisfying updates and issue version bumps thanks to [standard-version](https://github.com/conventional-changelog/standard-version) by running `yarn release`. This will generate:
 - Appropriate tags based on the conventional commit history

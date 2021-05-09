@@ -1,7 +1,21 @@
 {
   "name": "emiketic-starter-react-native",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "EMIKETIC React Native starter and CLI template",
+  "repository": "git@github.com:emiketic/emiketic-starter-react-native.git",
+  "author": "EMIKETIC Technologies <contact@emiketic.com>",
+  "license": "MIT",
+  "homepage": "https://www.emiketic.com",
+  "keywords": [
+    "react-native",
+    "react-native starter",
+    "emiketic"
+  ],
+  "bugs": {
+    "url": "https://github.com/emiketic/emiketic-starter-react-native/issues",
+    "email": "contact@emiketic.com"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -11,11 +25,14 @@
     "lint-fix": "eslint --ext .js --ext .jsx ./ --fix",
     "format-check": "prettier --check \"**/*.{js,jsx,json}\"",
     "format-fix": "prettier --write \"**/*.{js,jsx,json}\"",
-    "postinstall": "husky install",
     "release": "standard-version",
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
-    "release-dry": "standard-version --dry-run"
+    "release-dry": "standard-version --dry-run",
+    "postinstall": "husky install",
+    "template-postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "dependencies": {
     "react": "17.0.1",
@@ -39,6 +56,7 @@
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
+    "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "react-test-renderer": "17.0.1",
     "standard-version": "^9.3.0"
