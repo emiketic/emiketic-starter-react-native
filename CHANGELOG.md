@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.0.4...v0.0.5) (2021-05-09)
+
+
+### Bug Fixes
+
+* Fixes release scripts ([80be6e9](https://github.com/emiketic/emiketic-starter-react-native/commit/80be6e95c1a42510360ad0f4d9864f44950badcb))
+
 ### [0.0.4](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.0.3...v0.0.4) (2021-05-09)
 
 ### [0.0.3](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.0.2...v0.0.3) (2021-05-09)
