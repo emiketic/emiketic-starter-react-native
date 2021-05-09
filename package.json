@@ -1,6 +1,6 @@
 {
   "name": "emiketic-starter-react-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "EMIKETIC React Native starter and CLI template",
   "repository": "git@github.com:emiketic/emiketic-starter-react-native.git",

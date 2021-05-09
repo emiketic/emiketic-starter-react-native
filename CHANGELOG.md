@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.1.0...v0.1.1) (2021-05-09)
+
+
+### Features
+
+* Added licence ([17499c1](https://github.com/emiketic/emiketic-starter-react-native/commit/17499c163f2ca755e9f9cc9da0f104a0b986c4a5))
+
 ## [0.1.0](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.0.8...v0.1.0) (2021-05-09)
 
 ### [0.0.8](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.0.7...v0.0.8) (2021-05-09)
