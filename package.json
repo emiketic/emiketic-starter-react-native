@@ -12,7 +12,7 @@
     "format-check": "prettier --check \"**/*.{js,jsx,json}\"",
     "format-fix": "prettier --write \"**/*.{js,jsx,json}\"",
     "postinstall": "husky install",
-    "release": "standard-version && prettier",
+    "release": "standard-version",
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
     "release-dry": "standard-version --dry-run"
