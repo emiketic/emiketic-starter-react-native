@@ -62,6 +62,7 @@ module.exports = {
     'react/jsx-first-prop-new-line': [1, 'multiline'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/display-name': 'off',
+    'react/jsx-props-no-spreading': 0,
 
     /* ****************************** REACT NATIVE ****************************** */
 

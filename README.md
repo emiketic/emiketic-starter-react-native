@@ -46,6 +46,7 @@ _WIP_
 
 This template assumes developers are using Microsoft Visual Studio code for an optimized team experience. It contains the following defaults;
 
+- Debugger configurations for Android and iOS
 - A list of recommended EMIKETIC extensions for JavaScript and React developers (appears under the _Recommended_ filter in _Extensions_)
 - Linting and formatting rules
 - Spellcheck additions for common development words in English
