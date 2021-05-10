@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.1.1...v0.2.0) (2021-05-10)
+
+
+### Features
+
+* Kitten UI + Storybook setup + folder structure + env ([c4c5049](https://github.com/emiketic/emiketic-starter-react-native/commit/c4c5049f1c88aff8db03dc1009b5c357cc39d887))
+
 ### [0.1.1](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.1.0...v0.1.1) (2021-05-09)
 
 
