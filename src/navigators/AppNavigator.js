@@ -6,7 +6,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 // Local helpers & utils
-import { APP_ENV } from '@env';
+/* eslint-disable import/no-unresolved */
+import { APP_ENV } from '@env'; // @TODO: Figure out why ES-lint is not detecing @env
+/* eslint-enable */
 
 // Screens
 import StorybookUIRoot from '../../storybook';
