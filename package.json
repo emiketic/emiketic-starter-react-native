@@ -39,8 +39,18 @@
     "template-postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
+    "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "dependencies": {
     "@eva-design/eva": "^2.1.0",
@@ -71,6 +81,7 @@
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/addon-storyshots": "^6.2.9",
     "@storybook/react-native": "^5.3.25",
     "@storybook/react-native-server": "^5.3.23",
     "babel-jest": "^26.6.3",
@@ -79,6 +90,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -90,6 +102,7 @@
     "prettier": "^2.2.1",
     "react-dom": "17.0.1",
     "react-native-dotenv": "^2.5.5",
+    "react-native-storybook-loader": "^2.0.4",
     "react-test-renderer": "17.0.1",
     "standard-version": "^9.3.0"
   },

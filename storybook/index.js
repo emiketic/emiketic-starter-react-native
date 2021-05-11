@@ -8,16 +8,14 @@ import {
 } from '@storybook/react-native';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import './rn-addons';
-
-const stories = require('./stories');
+import { loadStories } from './storyLoader';
 
 // enables knobs for all stories
 addDecorator(withKnobs);
 
 // import stories
 configure(() => {
-  stories;
+  loadStories();
 }, module);
 
 // Refer to https://github.com/storybookjs/storybook/tree/master/app/react-native#start-command-parameters

@@ -4,6 +4,7 @@
 
 // Packages
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 // UI lib components
 import * as eva from '@eva-design/eva';
@@ -24,7 +25,7 @@ import mapping from '../theme/mapping.json';
 /*                                  Component                                 */
 /* -------------------------------------------------------------------------- */
 
-function App() {
+function App({ rootTarget, children }) {
   /* ********************************** HOOKS ********************************* */
 
   const [theme, setTheme] = useState('light');
@@ -35,6 +36,25 @@ function App() {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
   }
+
+  /* ***************************** RENDER HELPERS ***************************** */
+
+  /**
+   * Tells whether the App container will be used to render the main
+   * app or Storybook. This allows us to have a single point of mainteance
+   * for both apps
+   * @returns {ReactElement} Children to be rendered under the different providers
+   */
+  function getRootRenderingTarget() {
+    if (rootTarget === 'mainApp') {
+      return <AppNavigator />;
+    } else if (rootTarget === 'storybook') {
+      return children;
+    }
+  }
+
+  /* ******************************** RENDERING ******************************* */
+
   return (
     <>
       <IconRegistry icons={EvaIconsPack} />
@@ -43,11 +63,19 @@ function App() {
           {...eva}
           theme={{ ...eva[theme], ...appTheme[theme] }}
           customMapping={mapping}>
-          <AppNavigator />
+          {getRootRenderingTarget()}
         </ApplicationProvider>
       </ThemeContext.Provider>
     </>
   );
 }
+
+App.propTypes = {
+  rootTarget: PropTypes.oneOf(['mainApp', 'storybook']),
+};
+
+App.defaultProps = {
+  rootTarget: 'mainApp',
+};
 
 export default App;

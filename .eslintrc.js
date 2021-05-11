@@ -14,6 +14,7 @@ module.exports = {
     'plugin:react-native/all',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:mdx/recommended',
   ],
   settings: {
     'import/ignore': ['node_modules/react-native/index\\.js$'],
@@ -60,7 +61,7 @@ module.exports = {
     /* ******************************* JSX / REACT ****************************** */
 
     'react/jsx-first-prop-new-line': [1, 'multiline'],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'mdx'] }],
     'react/display-name': 'off',
     'react/jsx-props-no-spreading': 0,
 
@@ -77,4 +78,18 @@ module.exports = {
 
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
+  overrides: [
+    {
+      files: ['*.mdx'],
+      rules: {
+        semi: 0,
+      },
+    },
+    {
+      files: ['./storybook/storyLoader.js'],
+      rules: {
+        'global-require': 0,
+      },
+    },
+  ],
 };
