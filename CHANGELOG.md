@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.2.0...v0.2.1) (2021-05-11)
+
+
+### Features
+
+* Setup storybook and added HomeScreen story ([0956abf](https://github.com/emiketic/emiketic-starter-react-native/commit/0956abf7b75b32088a4d11b53b2701a6d755237a))
+
 ## [0.2.0](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.1.1...v0.2.0) (2021-05-10)
 
 
