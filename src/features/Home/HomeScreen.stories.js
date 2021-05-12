@@ -14,7 +14,7 @@ import HomeScreen from './HomeScreen';
 // -- Other components
 
 storiesOf('HomeScreen', module).add('default', () => (
-  <App>
+  <App rootTarget="storybook">
     <HomeScreen />
   </App>
 ));

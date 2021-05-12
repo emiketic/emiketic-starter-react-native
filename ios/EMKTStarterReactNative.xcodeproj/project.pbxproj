@@ -21,7 +21,7 @@
 		62D2F045D2FF4EC480B6CAC5 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D910B37D973741BEBB741216 /* OpenSans-ExtraBold.ttf */; };
 		7E58BE7C3C3841959FEC928A /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A995E93614349778AA2A9B8 /* OpenSans-SemiBold.ttf */; };
 		7FCEC80FB84D458B977CC053 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF5437145C64E40B478A270 /* OpenSans-SemiBoldItalic.ttf */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9140C619264C2F7E00670B05 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9140C618264C2F7E00670B05 /* BootSplash.storyboard */; };
 		93A4B06CC48EC52C7D9C3EDC /* libPods-EMKTStarterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 356E330E7E6F86D8FD90A876 /* libPods-EMKTStarterReactNative.a */; };
 		B379F71B59CB45459E6EE0A6 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 804CDC4C0CA94D4885C669EB /* OpenSans-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -40,30 +40,30 @@
 		00E356EE1AD99517003FC87E /* EMKTStarterReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMKTStarterReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EMKTStarterReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMKTStarterReactNativeTests.m; sourceTree = "<group>"; };
-		117D7474AD1C42958E6F00A3 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../assets/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		117D7474AD1C42958E6F00A3 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../assets/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EMKTStarterReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMKTStarterReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EMKTStarterReactNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EMKTStarterReactNative/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EMKTStarterReactNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EMKTStarterReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EMKTStarterReactNative/main.m; sourceTree = "<group>"; };
-		2A995E93614349778AA2A9B8 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../assets/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		2A995E93614349778AA2A9B8 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../assets/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		356E330E7E6F86D8FD90A876 /* libPods-EMKTStarterReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EMKTStarterReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38EE2EC502804D1783B10E5F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		5BF5437145C64E40B478A270 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBoldItalic.ttf"; path = "../assets/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		5E41FECE825D461192D93B36 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../assets/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		38EE2EC502804D1783B10E5F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		5BF5437145C64E40B478A270 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBoldItalic.ttf"; path = "../assets/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		5E41FECE825D461192D93B36 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../assets/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		7EC71653C4A23A552F790263 /* Pods-EMKTStarterReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMKTStarterReactNative.debug.xcconfig"; path = "Target Support Files/Pods-EMKTStarterReactNative/Pods-EMKTStarterReactNative.debug.xcconfig"; sourceTree = "<group>"; };
-		804CDC4C0CA94D4885C669EB /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EMKTStarterReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		804CDC4C0CA94D4885C669EB /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		89E2BE97AF9D4B32CF779BBD /* libPods-EMKTStarterReactNative-EMKTStarterReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EMKTStarterReactNative-EMKTStarterReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9140C618264C2F7E00670B05 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = EMKTStarterReactNative/BootSplash.storyboard; sourceTree = "<group>"; };
 		97656FA78D04AEE34961CA26 /* Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests/Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0D853C24172227D382ED084 /* Pods-EMKTStarterReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMKTStarterReactNative.release.xcconfig"; path = "Target Support Files/Pods-EMKTStarterReactNative/Pods-EMKTStarterReactNative.release.xcconfig"; sourceTree = "<group>"; };
 		B732EA8E5D2668DB6F452507 /* Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests/Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD66985DC20A482083A3C0C3 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../assets/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		D910B37D973741BEBB741216 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../assets/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		EC1FD4CBC8724249ACE21861 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../assets/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		CD66985DC20A482083A3C0C3 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../assets/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D910B37D973741BEBB741216 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../assets/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EC1FD4CBC8724249ACE21861 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../assets/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F7D035DD6CEF45F49C5A9149 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../assets/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F7D035DD6CEF45F49C5A9149 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../assets/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				9140C618264C2F7E00670B05 /* BootSplash.storyboard */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = EMKTStarterReactNative;
@@ -131,7 +131,6 @@
 				5BF5437145C64E40B478A270 /* OpenSans-SemiBoldItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -152,7 +151,6 @@
 				B732EA8E5D2668DB6F452507 /* Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.debug.xcconfig */,
 				97656FA78D04AEE34961CA26 /* Pods-EMKTStarterReactNative-EMKTStarterReactNativeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,8 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9140C619264C2F7E00670B05 /* BootSplash.storyboard in Resources */,
 				B379F71B59CB45459E6EE0A6 /* OpenSans-Bold.ttf in Resources */,
 				224095DF5B6C401293535D42 /* OpenSans-BoldItalic.ttf in Resources */,
 				62D2F045D2FF4EC480B6CAC5 /* OpenSans-ExtraBold.ttf in Resources */,
@@ -545,7 +543,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiketic.EMKTStarterReactNative;
 				PRODUCT_NAME = EMKTStarterReactNative;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -570,7 +568,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiketic.EMKTStarterReactNative;
 				PRODUCT_NAME = EMKTStarterReactNative;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
