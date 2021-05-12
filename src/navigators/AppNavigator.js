@@ -25,10 +25,14 @@ const HomeNavigator = () => (
   </Navigator>
 );
 
+// We don't need the Storybook UI in test run-time
+// (although we'll use storyshoots and other SB testing utilities)
 const PreviewEntranceNavigator = () => (
   <Navigator headerMode="none">
     <Screen name="Root" component={PreviewEntranceScreen} />
-    <Screen name="Storybook" component={StorybookUIRoot} />
+    {process.NODE_ENV !== 'test' ? (
+      <Screen name="Storybook" component={StorybookUIRoot} />
+    ) : null}
     <Screen name="Home" component={HomeScreen} />
     <Screen name="Details" component={SampleScreen} />
   </Navigator>

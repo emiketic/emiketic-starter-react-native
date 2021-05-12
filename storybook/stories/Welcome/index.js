@@ -33,19 +33,17 @@ export default class Welcome extends React.Component {
     return (
       <View style={this.styles.wrapper}>
         <Text style={this.styles.header}>
-          Welcome to React Native Storybook
+          Storybook Visual Testing Environment
         </Text>
         <Text style={this.styles.content}>
-          This is a UI Component development environment for your React Native
-          app. Here you can display and interact with your UI components as
-          stories. A story is a single state of one or more UI components. You
-          can have as many stories as you want. In other words a story is like a
-          visual test case.
+          Storybook React Native environment used to visually test and validate
+          components and design systems. Components are rendered within the
+          application container for a realistic visual testing experience
+          including theming
         </Text>
         <Text style={this.styles.content}>
-          We have added some stories inside the storybook/stories directory for
-          examples. Try editing the storybook/stories/Welcome.js file to edit
-          this message.
+          This environment can be disabled through the environment variable
+          APP_ENV in .env or .env.environmentName
         </Text>
       </View>
     );

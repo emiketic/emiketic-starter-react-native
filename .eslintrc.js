@@ -86,7 +86,7 @@ module.exports = {
       },
     },
     {
-      files: ['./storybook/storyLoader.js'],
+      files: ['./storybook/storyLoader.js', './jest/setup.js'],
       rules: {
         'global-require': 0,
       },

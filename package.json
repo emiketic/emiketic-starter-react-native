@@ -107,7 +107,14 @@
     "standard-version": "^9.3.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "'node_modules/(?!@react-native|react-native||@ui-kitten)'"
+    ],
+    "setupFiles": [
+      "./jest/setup.js",
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ]
   },
   "lint-staged": {
     "*.js": [
