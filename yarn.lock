@@ -8581,6 +8581,11 @@ husky@^6.0.0:
   resolved "https://registry.yarnpkg.com/husky/-/husky-6.0.0.tgz#810f11869adf51604c32ea577edbc377d7f9319e"
   integrity sha512-SQS2gDTB7tBN486QSoKPKQItZw97BMOd+Kdb6ghfpBc0yXyzrddI0oDV5MkDAbuB4X2mO3/nj60TRMcYxwzZeQ==
 
+hygen-emiketic-react@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hygen-emiketic-react/-/hygen-emiketic-react-1.0.2.tgz#27fd005abb81d5cce3b0a3c0e0fce869fb426b22"
+  integrity sha512-0mLrkmjkBvJ4x124SQjHSWmr/2VWEXqL/nTOOJ2BiZOYu9gKYlfJtb4aXitcmJPLFwoZM/PIbLYQOrW34SO+2Q==
+
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
