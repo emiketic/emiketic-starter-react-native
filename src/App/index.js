@@ -3,8 +3,9 @@
 /* -------------------------------------------------------------------------- */
 
 // Packages
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import RNBootSplash from 'react-native-bootsplash';
 
 // UI lib components
 import * as eva from '@eva-design/eva';
@@ -29,6 +30,12 @@ function App({ rootTarget, children }) {
   /* ********************************** HOOKS ********************************* */
 
   const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    (async function asyncWrapper() {
+      await RNBootSplash.hide({ fade: true });
+    })();
+  }, []);
 
   /* ******************************** CALLBACKS ******************************* */
 
