@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.2.1...v0.2.2) (2021-05-13)
+
+
+### Features
+
+* Added EMIKETIC Hygen generators for RN ([8e8572e](https://github.com/emiketic/emiketic-starter-react-native/commit/8e8572e5848e25d91af05f423f3d6a3a2addd6a1))
+* Splashscreen + icon generation + fix Home story ([45269a6](https://github.com/emiketic/emiketic-starter-react-native/commit/45269a6161e412036fa97a17a807f54e0b2fd3cd))
+* Working storyshot and Jest snapshots ([0287779](https://github.com/emiketic/emiketic-starter-react-native/commit/02877797897378b85439b51ce5245b5148e18d53))
+
+
+### Bug Fixes
+
+* Fixes splashcreen in Android WIP + fixes release build iOS ([fd8c202](https://github.com/emiketic/emiketic-starter-react-native/commit/fd8c202a5a47c994a0c00bd157706f3bf8287c59))
+* Splahscreen now fades away after launch ios/android ([8fe5fa4](https://github.com/emiketic/emiketic-starter-react-native/commit/8fe5fa452055eec6b1c0875897fba12e4389baef))
+
 ### [0.2.1](https://github.com/emiketic/emiketic-starter-react-native/compare/v0.2.0...v0.2.1) (2021-05-11)
 
 
