@@ -62,7 +62,8 @@ function App({ rootTarget, children }) {
         <ApplicationProvider
           {...eva}
           theme={{ ...eva[theme], ...appTheme[theme] }}
-          customMapping={mapping}>
+          customMapping={mapping}
+        >
           {getRootRenderingTarget()}
         </ApplicationProvider>
       </ThemeContext.Provider>
