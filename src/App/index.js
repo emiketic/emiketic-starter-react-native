@@ -26,6 +26,11 @@ import mapping from '../theme/mapping.json';
 /*                                  Component                                 */
 /* -------------------------------------------------------------------------- */
 
+/**
+ * Application container
+ * @param {String} rootTarget Tells whether to render Storybook or only the app
+ * @returns {ReactElement} Application container
+ */
 function App({ rootTarget, children }) {
   /* ********************************** HOOKS ********************************* */
 
