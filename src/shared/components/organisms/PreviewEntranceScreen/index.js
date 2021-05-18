@@ -25,7 +25,7 @@ function PreviewEntranceScreen({ navigation }) {
       <View style={styles.row}>
         <Button
           style={styles.button}
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Login')}
         >
           <Text>App</Text>
         </Button>

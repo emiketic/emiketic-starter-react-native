@@ -1,0 +1,57 @@
+{
+  "prompts": {
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "save": "Save",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "home": "Home"
+  },
+  "cta": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "export": "Export",
+    "add": "Add",
+    "edit": "Editer",
+    "supprimer": "Supprimer"
+  },
+  "placeholders": {
+    "search": "Search"
+  },
+  "auth": {
+    "expiredSession": "Expired session. You are now disconnected",
+    "loggedOut": "Successfully logged out",
+    "loggedIn": "Logged in. Started new session"
+  },
+  "errorPages": {
+    "notFound": {
+      "message": "Path not found or unreachable screen",
+      "backCta": "Back home"
+    }
+  },
+  "unknownError": "Unknown error",
+  "entities": {
+    "user": "User"
+  },
+  "types": {
+    "date": "Date",
+    "number": "Number",
+    "string": "String",
+    "boolean": "Boolean",
+    "object": "Object",
+    "dataTypes": "Shared entity (enumeration)",
+    "resource": "Data model",
+    "association": "Associated data model"
+  },
+  "operators": {
+    "exists": "Supplied",
+    "notexists": "Not supplied",
+    "equal": "Equal to",
+    "different": "Different from",
+    "less": "Less than",
+    "greater": "Greater than",
+    "lesseq": "Less or equal than",
+    "greatereq": "Greater or equal than"
+  }
+}

@@ -6,21 +6,34 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import RNBootSplash from 'react-native-bootsplash';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
+import axios from 'axios';
 
 // UI lib components
+import { Provider } from 'react-redux';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
+import { I18nextProvider } from 'react-i18next';
 
 // Navigation
 import AppNavigator from '../navigators/AppNavigator';
 
 // State management
+import store from '../store';
 import { ThemeContext } from '../theme/theme-context';
+
+// Local helpers & utils
+import { getSessionToken } from '../shared/services/auth';
 
 // Local configurations
 import appTheme from '../theme';
 import mapping from '../theme/mapping.json';
+import i18n from '../../localization/i18n';
+
+// Load API request driver with session token stored in local storage
+axios.defaults.headers.common.Authorization = `Bearer ${getSessionToken()}`;
 
 /* -------------------------------------------------------------------------- */
 /*                                  Component                                 */
@@ -41,6 +54,11 @@ function App({ rootTarget, children }) {
       await RNBootSplash.hide({ fade: true });
     })();
   }, []);
+
+  /* *************************** MISC CONFIGURATION *************************** */
+
+  // Load store from local storage
+  const persistor = persistStore(store);
 
   /* ******************************** CALLBACKS ******************************* */
 
@@ -70,15 +88,21 @@ function App({ rootTarget, children }) {
   return (
     <>
       <IconRegistry icons={EvaIconsPack} />
-      <ThemeContext.Provider value={{ theme, onChangeTheme }}>
-        <ApplicationProvider
-          {...eva}
-          theme={{ ...eva[theme], ...appTheme[theme] }}
-          customMapping={mapping}
-        >
-          {getRootRenderingTarget()}
-        </ApplicationProvider>
-      </ThemeContext.Provider>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <I18nextProvider i18n={i18n}>
+            <ThemeContext.Provider value={{ theme, onChangeTheme }}>
+              <ApplicationProvider
+                {...eva}
+                theme={{ ...eva[theme], ...appTheme[theme] }}
+                customMapping={mapping}
+              >
+                {getRootRenderingTarget()}
+              </ApplicationProvider>
+            </ThemeContext.Provider>
+          </I18nextProvider>
+        </PersistGate>
+      </Provider>
     </>
   );
 }

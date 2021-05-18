@@ -4,6 +4,7 @@
 
 // Packages
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // UI lib components
 import { Button, Text } from '@ui-kitten/components';
@@ -16,10 +17,15 @@ import ScreenContainer from '../../shared/components/organisms/ScreenContainer';
 /* -------------------------------------------------------------------------- */
 
 function SampleScreen({ navigation }) {
+  /* ********************************** HOOKS ********************************* */
+
+  // Localization
+  const { t } = useTranslation('Common');
+
   return (
     <ScreenContainer>
       <Button onPress={() => navigation.navigate('Root')}>
-        <Text>Go home</Text>
+        <Text>{t('prompts.home')}</Text>
       </Button>
     </ScreenContainer>
   );

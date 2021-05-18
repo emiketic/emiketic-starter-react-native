@@ -6,13 +6,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 // Local helpers & utils
-/* eslint-disable import/no-unresolved */
-import { APP_ENV } from '@env'; // @TODO: Figure out why ES-lint is not detecing @env
-/* eslint-enable */
+import { APP_ENV } from '@env';
 
 // Screens
 import StorybookUIRoot from '../../storybook';
 import PreviewEntranceScreen from '../shared/components/organisms/PreviewEntranceScreen';
+import LoginScreen from '../features/Auth/LoginScreen';
 import HomeScreen from '../features/Home';
 import SampleScreen from '../features/Sample';
 
@@ -20,7 +19,8 @@ const { Navigator, Screen } = createStackNavigator();
 
 const HomeNavigator = () => (
   <Navigator headerMode="none">
-    <Screen name="Root" component={HomeScreen} />
+    <Screen name="Root" component={LoginScreen} />
+    <Screen name="Home" component={HomeScreen} />
     <Screen name="Details" component={SampleScreen} />
   </Navigator>
 );
@@ -33,6 +33,7 @@ const PreviewEntranceNavigator = () => (
     {process.NODE_ENV !== 'test' ? (
       <Screen name="Storybook" component={StorybookUIRoot} />
     ) : null}
+    <Screen name="Login" component={LoginScreen} />
     <Screen name="Home" component={HomeScreen} />
     <Screen name="Details" component={SampleScreen} />
   </Navigator>

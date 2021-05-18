@@ -41,7 +41,7 @@ module.exports = {
     quotes: [2, 'single', { avoidEscape: true }],
     semi: ['error', 'always'],
     'max-len': ['warn', { code: 120 }],
-    'object-curly-spacing': 1,
+    'object-curly-spacing': 0,
 
     /* ******************************* JAVASCRIPT ******************************* */
     camelcase: 'warn',
@@ -57,6 +57,7 @@ module.exports = {
     'no-empty': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-cycle': 'warn',
+    'import/no-unresolved': [2, { ignore: ['@env'] }],
 
     /* ******************************* JSX / REACT ****************************** */
 
@@ -79,16 +80,25 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   overrides: [
+    // Don't lint MDX files in React Native
     {
       files: ['*.mdx'],
       rules: {
         semi: 0,
       },
     },
+    // Tolerate globale requires for these configuration files
     {
       files: ['./storybook/storyLoader.js', './jest/setup.js'],
       rules: {
         'global-require': 0,
+      },
+    },
+    // Tolerate non-camelcase variable naming for these files
+    {
+      files: ['./localization/i18n.js'],
+      rules: {
+        camelcase: 0,
       },
     },
   ],

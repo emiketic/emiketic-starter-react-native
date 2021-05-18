@@ -115,3 +115,5 @@ exports[`Storyshots HomeScreen default 1`] = `
   </RCTSafeAreaView>
 </View>
 `;
+
+exports[`Storyshots LoginScreen default 1`] = `null`;
