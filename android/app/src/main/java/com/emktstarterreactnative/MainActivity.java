@@ -1,6 +1,7 @@
 package com.emktstarterreactnative;
-
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactActivityDelegate;
+import com.zoontek.rnbootsplash.RNBootSplash;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +13,19 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "EMKTStarterReactNative";
   }
+
+  /**
+    @see: https://reactnavigation.org/docs/getting-started
+  */
+ @Override
+ protected ReactActivityDelegate createReactActivityDelegate() {
+   return new ReactActivityDelegate(this, getMainComponentName()) {
+
+     @Override
+     protected void loadApp(String appKey) {
+       RNBootSplash.init(MainActivity.this);
+       super.loadApp(appKey);
+     }
+   };
+ }
 }

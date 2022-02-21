@@ -1,0 +1,64 @@
+{
+  "prompts": {
+    "yes": "Oui",
+    "no": "Non",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "home": "Accueil"
+  },
+  "cta": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "export": "Exporter",
+    "add": "Ajouter",
+    "edit": "Editer",
+    "supprimer": "Supprimer"
+  },
+  "placeholders": {
+    "search": "Rechercher"
+  },
+  "auth": {
+    "expiredSession": "Session expirée. Vous êtes déconnecté",
+    "loggedOut": "Session fermée",
+    "loggedIn": "Nouvelle session ouverte"
+  },
+  "errorPages": {
+    "notFound": {
+      "reason": {
+        "path": {
+          "message": "Chemin inexistant ou écran inatteignable"
+        },
+        "resource": {
+          "message": "Resource introuvable"
+        },
+        "request": {
+          "message": "Requête ou données fournies invalides"
+        }
+      },
+      "backCta": "Accueil"
+    }
+  },
+  "unknownError": "Une erreur inconnue est survenue",
+  "types": {
+    "date": "Date",
+    "number": "Nombre",
+    "string": "Chaîne de caractère",
+    "boolean": "Booléen",
+    "object": "Objet",
+    "dataTypes": "Entité partagée (énumération)",
+    "resource": "Modèle de données",
+    "association": "Association à un modèle de données"
+  },
+  "operators": {
+    "exists": "Renseigné",
+    "notexists": "Non rensneigné",
+    "equal": "Egal à",
+    "different": "Différent de",
+    "less": "Inférieur à",
+    "greater": "Supérieur à",
+    "lesseq": "Inférieur ou égal à",
+    "greatereq": "Supérieur ou égal à"
+  }
+}

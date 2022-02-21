@@ -1,29 +1,120 @@
 {
-  "name": "EMKTStarterReactNative",
-  "version": "0.0.1",
-  "private": true,
+  "name": "emiketic-starter-react-native",
+  "version": "0.2.2",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "EMIKETIC React Native starter and CLI template",
+  "repository": "git@github.com:emiketic/emiketic-starter-react-native.git",
+  "author": "EMIKETIC Technologies <contact@emiketic.com>",
+  "license": "MIT",
+  "homepage": "https://www.emiketic.com",
+  "keywords": [
+    "react-native",
+    "react-native starter",
+    "emiketic"
+  ],
+  "bugs": {
+    "url": "https://github.com/emiketic/emiketic-starter-react-native/issues",
+    "email": "contact@emiketic.com"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "perf-audit:ios": "npx react-native-bundle-visualizer",
+    "perf-audit:android": "npx react-native-bundle-visualizer --platform android",
+    "lint:check": "eslint --ext .js --ext .jsx ./",
+    "lint:fix": "eslint --ext .js --ext .jsx ./ --fix",
+    "format:check": "prettier --check \"**/*.{js,jsx,json}\"",
+    "format:fix": "prettier --write \"**/*.{js,jsx,json}\"",
+    "release": "yarn test && standard-version",
+    "release:minor": "yarn test && standard-version --release-as minor",
+    "release:major": "yarn test && standard-version --release-as major",
+    "release:dry": "yarn test && standard-version --dry-run",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook",
+    "set-icon": "react-native set-icon --path ./assets/icon-source.png",
+    "set-splashscreen": "react-native generate-bootsplash assets/icon-source.png --background-color=270E45"
   },
   "dependencies": {
+    "@manaflair/redux-batch": "^1.0.0",
+    "@react-native-async-storage/async-storage": "^1.15.17",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "@reduxjs/toolkit": "^1.7.1",
+    "axios": "^0.25.0",
+    "i18next": "^21.6.8",
+    "i18next-react-native-language-detector": "^1.0.2",
+    "prop-types": "^15.8.1",
     "react": "17.0.2",
-    "react-native": "0.67.1"
+    "react-i18next": "^11.15.3",
+    "react-native": "0.67.1",
+    "react-native-gesture-handler": "^2.2.0",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.2",
+    "react-native-svg": "^12.1.1",
+    "react-native-ui-lib": "^6.8.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/runtime": "^7.16.7",
+    "@bam.tech/react-native-make": "^3.0.3",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
     "babel-jest": "^27.4.6",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-dotenv-import": "^2.2.0",
     "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-mdx": "^1.16.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "husky": "^7.0.4",
+    "hygen-emiketic-react": "^1.4.1",
     "jest": "^27.4.7",
     "metro-react-native-babel-preset": "^0.66.2",
-    "react-test-renderer": "17.0.2"
+    "pinst": "^2.1.6",
+    "prettier": "^2.5.1",
+    "react-dom": "17.0.2",
+    "react-native-bootsplash": "^4.1.0",
+    "react-native-dotenv": "^3.3.1",
+    "react-native-storybook-loader": "^2.0.5",
+    "react-test-renderer": "17.0.2",
+    "standard-version": "^9.3.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "'node_modules/(?!@react-native|react-native||@ui-kitten)'"
+    ],
+    "setupFiles": [
+      "./jest/setup.js",
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ]
   }
 }
